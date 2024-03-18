@@ -1,5 +1,5 @@
 require("dotenv").config();
-
+const mongoose = require("mongoose");
 const express = require("express");
 const projectRoutes = require("./routes/projects.routes");
 
@@ -17,7 +17,13 @@ app.use((req, res, next) => {
 // routes
 app.use("/api/projects", projectRoutes);
 
-// listen for requests
-app.listen(process.env.PORT, () => {
-  console.log("Server is running on port", process.env.PORT);
-});
+// connect to DB
+mongoose
+  .connect(process.env.MONGO)
+  .then(() => {
+    // listen for requests
+    app.listen(process.env.PORT, () => {
+      console.log("Connected to DB & running on port", process.env.PORT);
+    });
+  })
+  .catch((error) => console.log(error));
