@@ -9,21 +9,29 @@ const Board = () => {
             Todo
           </div>
           <Project />
+          <Project />
+          <Project />
         </div>
         <div>
           <div className="w-[249px] h-[42px] border-b-2 border-[#306BFF] text-lg font-bold uppercase">
             In progress
           </div>
+          <Project />
+          <Project />
+          <Project />
         </div>
         <div>
           <div className="w-[249px] h-[42px] border-b-2 border-[#FFB580] text-lg font-bold uppercase">
             QA
           </div>
+          <Project />
         </div>
         <div>
           <div className="w-[249px] h-[42px] border-b-2 border-[#78C552] text-lg font-bold uppercase">
             Completed
           </div>
+          <Project />
+          <Project />
         </div>
       </div>
     </div>
