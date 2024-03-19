@@ -1,11 +1,11 @@
-import Navbar from "../components/Navbar";
 import { Sidebar } from "../components/Sidebar";
+import { MainContent } from "../components/MainContent";
 
 export const HomePage = () => {
   return (
-    <div className="bg-white flex">
+    <div className="container mx-auto bg-white flex gap-4">
       <Sidebar />
-      <Navbar />
+      <MainContent />
     </div>
   );
 };

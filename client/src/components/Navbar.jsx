@@ -1,19 +1,19 @@
 const Navbar = () => {
   return (
-    <div>
-      <div>
-        <h2 className="text-gray-700">Company Projects</h2>
-        <p>Last Update: 15 February 2024</p>
+    <div className="w-[1141px] h-[997px] mt-6 border rounded-md shadow-md p-3">
+      <div className="w-[933px] h-[62px] mb-4">
+        <h1 className="text-black text-3xl font-bold ">Company Projects</h1>
+        <p className="text-gray-500 pt-2">Last Update: 15 February 2024</p>
       </div>
-      <div>
-        <ul>
-          <li>Overview</li>
-          <li>Board</li>
-          <li>List</li>
-          <li>Timeline</li>
-          <li>Calender</li>
-          <li>Workflow</li>
-          <li>Files</li>
+      <div className="mb-4 py-3 border-b-[2px]">
+        <ul className="flex gap-3 ">
+          <li className="hover:text-[#0177FB] cursor-pointer">Overview</li>
+          <li className="hover:text-[#0177FB] cursor-pointer">Board</li>
+          <li className="hover:text-[#0177FB] cursor-pointer">List</li>
+          <li className="hover:text-[#0177FB] cursor-pointer">Timeline</li>
+          <li className="hover:text-[#0177FB] cursor-pointer">Calender</li>
+          <li className="hover:text-[#0177FB] cursor-pointer">Workflow</li>
+          <li className="hover:text-[#0177FB] cursor-pointer">Files</li>
         </ul>
       </div>
     </div>
